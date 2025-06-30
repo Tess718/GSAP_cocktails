@@ -374,3 +374,7 @@ body {
         }
     }
 }
+
+.scrollbar_hide::-webkit-scrollbar{
+    @apply hidden
+}
