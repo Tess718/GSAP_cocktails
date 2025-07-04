@@ -2,7 +2,10 @@ import React from 'react'
 import { openingHours, socials } from '../../constants'
 import { SplitText } from 'gsap/all'
 import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const Contact = () => {
     
@@ -26,6 +29,8 @@ const Contact = () => {
         .to('#f-right-leaf', {
             y: '-50', duration: 1, ease: 'power1.inOut'
         })
+
+        
     })
 
   return (

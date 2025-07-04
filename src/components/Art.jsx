@@ -3,6 +3,10 @@ import { featureLists, goodLists } from '../../constants'
 import { useMediaQuery } from 'react-responsive'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
+
 
 const Art = () => {
     const isMobile = useMediaQuery({ maxWidth: 767 })
